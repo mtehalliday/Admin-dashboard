@@ -25,9 +25,25 @@
     grid-row: 1 / -1;
     background-color: rgba(0, 130, 244);
     display: grid;
-    grid-template-rows: 22;
+    grid-template-rows: repeat(22, 1fr);
+    grid-template-columns: 1fr 5fr;
     font-size: 20px;
     color: white;
+}
+
+.sidebar img, 
+.sidebar div {
+    border: 1px solid black;
+}
+
+.sidebar img.logo {
+    grid-row: 1 / 4;
+}
+
+.sidebar div.logo {
+    grid-row: 1 / 4; 
+    justify-self: center;
+    align-self: center;
 }
 
 .content {
