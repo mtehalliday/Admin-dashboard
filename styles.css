@@ -10,7 +10,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 3fr;
     border: 2px solid black;
 }
 
@@ -18,6 +18,33 @@
     border: 2px solid black;
     grid-column: 2 / -1;
     background-color: yellow;
+    grid-template-rows: 1fr 1fr;
+
+    display: grid;
+}
+
+ .header >  div {
+   border: 1px solid black;
+}
+
+.header .top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);   
+}
+
+.header .top .search-bar {
+    grid-column: 2 / 9;
+    border: 1px solid black;
+    background-color: black;
+}
+.header .top .bell { 
+    grid-column: 9 / 11;
+    border: 1px solid black;
+
+}
+.header .top .pic {
+    grid-column: 11 / 12;
+    border: 1px solid black;
 }
 
 .sidebar {
