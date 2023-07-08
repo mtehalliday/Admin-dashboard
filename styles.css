@@ -23,7 +23,11 @@
 .sidebar {
     border: 2px solid black;
     grid-row: 1 / -1;
-    background-color: blue;
+    background-color: rgba(0, 130, 244);
+    display: grid;
+    grid-template-rows: 22;
+    font-size: 20px;
+    color: white;
 }
 
 .content {
