@@ -29,21 +29,34 @@
 
 .header .top {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);   
+    grid-template-columns: repeat(15, 1fr);   
 }
 
 .header .top .search-bar {
-    grid-column: 2 / 9;
+    grid-column: 2 / 11;
     border: 1px solid black;
     background-color: black;
 }
 .header .top .bell { 
-    grid-column: 9 / 11;
+    grid-column: 11 / 13;
     border: 1px solid black;
 
 }
 .header .top .pic {
-    grid-column: 11 / 12;
+    grid-column: 13 / 14;
+    border: 1px solid black;
+}
+
+.header .bottom {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+.header .bottom. .big-pic {
+    grid-column: 1 / 2;
+    border: 1px solid black;
+}
+.header .bottom .welcome {
+    grid-column: 2 / 7;
     border: 1px solid black;
 }
 
