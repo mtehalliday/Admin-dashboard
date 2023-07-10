@@ -196,12 +196,14 @@ padding-left: 7px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-.content .projects div {
+.content .projects > div {
     background-color: white;
     border-left: 8px solid gold;
     border-radius: 14px;
     min-height: 100px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
 
 }
 .content .projects div h4 {
@@ -210,6 +212,24 @@ padding-left: 7px;
 .content .projects div p {
     color:rgb(100, 100, 100);
 }
+
+.content .projects .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.content .projects .wrapper img {
+    padding: 5px;
+    max-height: 30px;
+    min-height: 15px;
+    margin: 5px;
+}
+
 
 .content .info {
     border: 1px solid black; 
