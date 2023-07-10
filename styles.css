@@ -31,12 +31,12 @@ button {
 }
 
 .header {
-    border: 2px solid black;
     grid-column: 2 / -1;
     background-color: white;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(15, 1fr);   
     display: grid;
+    box-shadow: 0 3px 3px darkgray;
 }
 .header .search {
     grid-column: 2 / 11;
@@ -70,9 +70,7 @@ button {
     /* object-fit: contain; */
 }
 
- /* .header >  div {
-   border: 1px solid black;
-} */
+
 
 .header .bell { 
     grid-column: 11 / 13;
@@ -238,6 +236,15 @@ padding-left: 7px;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
-.content .info div {
-    border: 5px, solid black;
+.content .info .announcements {
+    border-left: 40px solid white;
+    border-right: 40px solid white;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 14px;
+}
+.content .info .announcements div {
+    border-bottom: 1px solid var(--search-grey);
+
 }
