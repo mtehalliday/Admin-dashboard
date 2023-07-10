@@ -1,6 +1,7 @@
 :root {
     --sidebar: #0ea5e9;
     --search-grey: rgb(220, 220, 220);
+    --textgrey: rgb(100, 100, 100);
 }
 
 
@@ -36,7 +37,7 @@ button {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(15, 1fr);   
     display: grid;
-    box-shadow: 0 3px 3px darkgray;
+    box-shadow: 0 3px 3px var(--textgrey);
 }
 .header .search {
     grid-column: 2 / 11;
@@ -208,7 +209,7 @@ padding-left: 7px;
     padding-bottom: 6px;
 }
 .content .projects div p {
-    color:rgb(100, 100, 100);
+    color: var(--textgrey);
 }
 
 .content .projects .wrapper {
@@ -243,8 +244,22 @@ padding-left: 7px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     border-radius: 14px;
+    padding: 10px 0;
 }
 .content .info .announcements div {
     border-bottom: 1px solid var(--search-grey);
+    padding: 16px 6px;
+}
+.content .info .announcements div.privacy {
+    border-bottom: none;
+    padding: 16px 6px;
+}
 
+.content .info .announcements div h5 {
+    font-size: 12px;
+}
+.content .info .announcements div p {
+    font-size: 10px;
+    padding-top: 2px;
+    color: var(--textgrey);
 }
