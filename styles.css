@@ -61,82 +61,81 @@ button {
     display: flex;
     justify-content: flex-end; 
     align-items: center;
+    max-height: 50px;
 }
 .header .magnify .glass {
-    height: 25px;
+    max-height: 25px;
     max-width: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
  .header >  div {
    border: 1px solid black;
 }
 
-/* .header .top {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);   
-    align-content: center;
-    justify-items: center;
-} */
-
-/* .header .top .search {
-    grid-column: 2 / 11;
-    align-self: center;
-    justify-self: center;
-    width: 100%;
-} */
-
-/* .header .top .search input {
-    width: 100%;
-    height: 25px;
-    border-radius: 8px;
-    margin-left: 10px;
-    border: none;
-    background-color: rgb(220, 220, 220);} */
-
-/* .header .top .search input:focus {
-    box-shadow: 1px 1px 1px gray;
-    border: none;
-    outline: 0;
-} */
-.header .top .bell { 
+.header .bell { 
     grid-column: 11 / 13;
-    height: 40%;
+    max-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* height: 40%;
     justify-self: end; 
-    display: flex; 
+    display: flex;  */
 
 }
-.header .top .bell img {
-    justify-content: flex-end; 
-    margin-right: 10px;
-    max-height: 100%;
-    max-width: auto;
-    object-fit: contain;
+.header .bell img {
+    max-height: 25px;
+    padding-right: 10px;
 }
-.header .top .pic {
+
+ .header .pic {
     grid-column: 13 / 14;
     border: 1px solid black;
-    display: grid;
-    place-items: center;
-    height: 100%;
-}
-.header .top .username {
-    justify-self: center;
-    align-self: center;
-    font-size: 10px;
+    max-height: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header .bottom {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+.header .pic img {
+    max-height: 35px;
+    width: auto;
+} 
+.header .username {
+    grid-column: 14 / 16;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
 }
-.header .bottom. .big-pic {
-    grid-column: 1 / 2;
+
+.header .big-pic {
+    grid-column: 1 / 3;
+    border: 1px solid black;
+    max-height: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .big-pic img {
+    max-height: 40px;
+    width: auto;
+}
+.header .welcome {
+    grid-column: 3 / 11;
     border: 1px solid black;
 }
-.header .bottom .welcome {
-    grid-column: 2 / 7;
-    border: 1px solid black;
+
+.header .welcome > * {
+    padding: 2px 6px;
+}
+
+.header .welcome p {
+font-size: 10px;
+font-weight: 600;
+padding-left: 7px;
 }
 
 .sidebar {
